@@ -1,6 +1,4 @@
-# Documentation for FSM Cybersecurity Project | Methodology Followed
-
-## Steps Followed
+## Methodology Followed
 1. Literature Review and Insights from AI about the past developments in this domain (cybersecurity of OT components).
 2. Collection and accumulation of resources (articles, GitHub repositories, etc).
 3. Deciding upon the stages of the project and the components/infrastructure to be used at each stage.
