@@ -1,0 +1,20 @@
+---
+# Documentation for FSM Cybersecurity Project | GitHub Components Explanation
+---
+
+| **File or Directory** | **Role or Usage** |
+|:---|:---|
+| `README.md` | Comprises of how to clone and run the emulation on a local device along with some other additional resources and that might help in improving the user experience |
+| `docker-compose.yml` | This is the `yml` file which comprises of _all_ the Docker components (containers, networks like bridges, etc). Modify this file to modify the way a Docker container (pre-defined) runs or to remove one from running at the same time. |
+| `Makefile` | A simple makefile that reduces the efforts of having to write the same repititive commands to start up the Docker components, logging data, opening up the `OPCUA-Client`, etc. To add addtional commands to run, you can modify this file and do not forget to modify the `.PHONY` and `help` sections. |
+| `client` Directory | This directory contains the files (`Dockerfile` and python files) that are required to emulate a client PLC. Details for each of the files is given below. |
+| `client/Dockerfile` | Based upon a minimalistic used Ubuntu22.04, its current implementation has two options - one is to print all the values initially and wait to log if any change is observed (`opcua_client_change.py`) and the is to run continuous logging at a delay of 1000ms (`opcua_client.py`). |
+| `client/client_logic.py` | It is a python script that was used in the initial commits to emulate a client based on the OPC UA protocol. Is redundant for now. |
+| `client/custom_client.py` and `client/custom_client_changes_sub.py` | These two python files can help you run the client on the host device manually. As the names suggest, `custom_client.py` has a continuous logging of every component at a delay of 1000ms. While, `client/custom_client_changes_sub.py` has an initial log, followed by printing if there are any changes in the values. |
+| `server` Directory | This directory contains the files (`Dockerfile` and python files) that are required to emulate a server PLC based on OPC UA communication protocol. Details for each of the files is given below. |
+| `server/Dockerfile` | Uses a minimalistic image of Ubuntu22.04 and the [OpenPLC_v3 GitHub Library](https://github.com/thiagoralves/OpenPLC_v3.git), with some modifications in files - `/opt/openplc/webserver/webserver.py` (this file is added in the current directory, with some modified, additional error handling). It continuously runs the `entrypoint.sh` file (details below). |
+| `server/entrypoint.sh` | This file is run by the Docker image of server. It has two python files being run simultaneously - `webserver.py` and `modbus_to_opcua.py`, both of which act as essential files for running the OpenPLC_v3 repo and the OPC UA wrapper respectively. |
+| `server/modbus_to_opcua.py` | To get a complete idea, better refer to the script. As an overview, the aim of this file is to capture the data that is being transmitted using the Modbus-TCP protocol (default communication protocol for OpenPLC) and add a wrapper of the OPC UA protocol and publish the same at `opc.tcp://localhost:4840` for the clients and other devices to read the same. |
+| `server/opcua_server.py` | Used to emulate an OPC UA server manually in the localhost (based on a custom PLC program). |
+| `server/server_logic.py` | It is a python script that was used in the initial commits to emulate a sample server (and a sample OPC UA script) based on the OPC UA protocol. Is redundant for now. |
+| `attacker` Directory | Uses an image of Ubuntu:22.04, and its goal is to act as an attacker based on the same network (Docker Bridge). This is still under development and seeks updates. |
