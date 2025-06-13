@@ -1,4 +1,1 @@
----
-# Documentation for FSM Cybersecurity Project | Current Progress and Future Scope
----
-
+# Current Progress and Future Scope

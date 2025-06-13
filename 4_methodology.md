@@ -1,6 +1,4 @@
----
 # Documentation for FSM Cybersecurity Project | Methodology Followed
----
 
 ## Steps Followed
 1. Literature Review and Insights from AI about the past developments in this domain (cybersecurity of OT components).

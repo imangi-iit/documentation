@@ -1,6 +1,4 @@
----
-# Documentation for FSM Cybersecurity Project | Concepts Used
----
+# Concepts Used
 
 ## **1. Introduction to PLCs**
 

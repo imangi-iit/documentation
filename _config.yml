@@ -178,30 +178,30 @@ sidebar:
         #     iframe_mode: true
         #     category: Features
         # Example URL
-        -   url: 1_system_overview.md
-            title: System Overview
-            order: 500
-            category: Document Content
-        -   url: 2_overall_architecture.md
-            title: Overall Architecture
-            order: 500
-            category: Document Content
-        -   url: 3_concepts.md
-            title: Concepts and Ideas Used
-            order: 500
-            category: Document Content
-        -   url: 4_methodology.md
-            title: Methodology Followed and Current Progress
-            order: 500
-            category: Document Content
-        -   url: 5_github.md
-            title: GitHub files Breakdown Explanation
-            order: 500
-            category: Document Content
-        -   url: 7_auxilliary.md
-            title: Auxilliary References
-            order: 500
-            category: Document Content
+        # -   url: 1_system_overview.md
+        #     title: System Overview
+        #     order: 500
+        #     category: Document Content
+        # -   url: 2_overall_architecture.md
+        #     title: Overall Architecture
+        #     order: 500
+        #     category: Document Content
+        # -   url: 3_concepts.md
+        #     title: Concepts and Ideas Used
+        #     order: 500
+        #     category: Document Content
+        # -   url: 4_methodology.md
+        #     title: Methodology Followed and Current Progress
+        #     order: 500
+        #     category: Document Content
+        # -   url: 5_github.md
+        #     title: GitHub files Breakdown Explanation
+        #     order: 500
+        #     category: Document Content
+        # -   url: 7_auxilliary.md
+        #     title: Auxilliary References
+        #     order: 500
+        #     category: Document Content
         # -   url: https://olivier3lanc.github.io/Scroll-Frames/
         #     title: Scroll Frames
         #     order: 500

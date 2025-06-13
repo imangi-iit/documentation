@@ -1,6 +1,4 @@
----
-# Documentation for FSM Cybersecurity Project | GitHub Components Explanation
----
+# GitHub Components Explanation
 
 | **File or Directory** | **Role or Usage** |
 |:---|:---|

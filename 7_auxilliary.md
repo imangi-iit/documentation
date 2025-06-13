@@ -1,5 +1,3 @@
----
-# Documentation for FSM Cybersecurity Project
----
+# Auxilliary References
 
 ## Research Papers
