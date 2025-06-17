@@ -35,7 +35,7 @@
   * Running OpenPLC Containers
   * Configuring Communication Between Containers
 
-## 4. OPC UA Protocol
+## 4A. OPC UA Protocol
 
 * Introduction to OPC UA
 
@@ -49,6 +49,36 @@
 
   * OPC UA Servers and Clients
   * Configuring OPC UA Communication
+
+## 4B. Modbus Protocol | [link](https://www.advantech.com/en/resources/white-papers/5d094a3b-9c70-48fa-ae48-580d351fa42d)
+
+* Introduction to Modbus Protocol
+  * Default communication protocol behind OpenPLC.
+* Format and content of Modbus data
+
+  * Different types of data storage locations within a slave device.
+  * **Coils** are single-bit, discrete outputs that can be read and written, while **registers** are 16-bit values that can also be read and written, or read-only depending on the register type.
+
+### Coils
+- Represent discrete (boolean), on/off (binary) values, like the state of a switch or a relay. 
+- Can be read to determine their current state (on or off). 
+- Can be written to change their state (e.g., turn a relay on or off). 
+- Modbus function codes for coils include reading multiple coils (01), reading a single coil (05), and writing a single coil (05). 
+
+### Registers
+- Represent numerical values, typically 16-bit integers. 
+- Can be read to retrieve the current value. 
+- Can be written to change the value (with some registers being read-only). 
+- Modbus function codes for registers include reading multiple holding registers (03), reading multiple input registers (04), writing a single holding register (06), and writing multiple holding registers (16).
+- Two types of registers:
+
+  - Holding Registers (4x): These are general-purpose registers that can be both read and written. They are often used to store configuration parameters or setpoints. 
+  - Input Registers (3x): These registers are read-only and typically used to store sensor readings or other measured values.
+
+### Addressing
+- Each coil or register has a unique address within the Modbus slave device. 
+- These addresses are used in Modbus messages to specify which data element is being accessed. 
+- The specific addressing scheme (e.g., the starting address for coils or registers) is defined by the Modbus slave device.
 
 ## 5. Networking and Communication in PLC Emulation
 

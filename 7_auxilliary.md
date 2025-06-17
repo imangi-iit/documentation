@@ -11,20 +11,18 @@
 ## Research Papers
 - [OPC UA Security](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=5514836)
 - [PLC Network Security](https://doi.org/10.1016/j.ijcip.2018.05.004)
-- [PDF](/assets/research-papers/13_opc_day.pdf)
-- [PDF](/assets/research-papers/Compatible_OpenPLC_%20for_Cyber_Attack_Case_Studies_on_Smart_Substation_Systems.pdf)
-- [PDF](/assets/research-papers/DEF%20CON%2025%20-%20Cheng-Lei-The-Spear-to-Break-the-Security-Wall-of-S7CommPlus.pdf)
-- [PDF](/assets/research-papers/Digital_Twin-Based_Cyber-Attack_Detection_Framework_for_Cyber-Physical_Manufacturing_Systems.pdf)
-- [PDF](/assets/research-papers/Evaluation_of_OPC_UA_secure_communication_in_web_browser_applications.pdf)
-- [PDF](/assets/research-papers/Investigating_the_Security_of_OpenPLC_Vulnerabilities_Attacks_and_Mitigation_Solutions.pdf)
-- [PDF](/assets/research-papers/On_plc_network_sec.pdf)
-- [PDF](/assets/research-papers/OpenPLC.pdf)
-- [PDF](/assets/research-papers/preempt-rt-slides.pdf)
-- [PDF](/assets/research-papers/Research_on_OPC_UA_based_on_electronic_device_description.pdf)
-- [PDF](/assets/research-papers/Research_on_OPC_UA_security.pdf)
-- [PDF](/assets/research-papers/security_challenges_in_industry_4.pdf)
+- [OpenPLC for Cyber Attack (Case Studies) on Smart Substation Systems](/assets/research-papers/Compatible_OpenPLC_%20for_Cyber_Attack_Case_Studies_on_Smart_Substation_Systems.pdf)
+- [Digital Twin Based Cyber Attack Detection Framework for Cyber Physical Manufacturing Systems](/assets/research-papers/Digital_Twin-Based_Cyber-Attack_Detection_Framework_for_Cyber-Physical_Manufacturing_Systems.pdf)
+- [Evaluation of OPC UA Secure Communication in Web Browser Applications](/assets/research-papers/Evaluation_of_OPC_UA_secure_communication_in_web_browser_applications.pdf)
+- [Investigating the Security of OpenPLC Vulnerabilities Attacks and Mitigation Solutions](/assets/research-papers/Investigating_the_Security_of_OpenPLC_Vulnerabilities_Attacks_and_Mitigation_Solutions.pdf)
+- [On PLC Network Security](/assets/research-papers/On_plc_network_sec.pdf)
+- [OpenPLC based control system testbed for PLC whitelisting system](/assets/research-papers/OpenPLC.pdf)
+- [OPC UA Based on Electronic Device Description](/assets/research-papers/Research_on_OPC_UA_based_on_electronic_device_description.pdf)
+- [Research on OPC UA Security](/assets/research-papers/Research_on_OPC_UA_security.pdf)
+- [Security Challenges in Industry 4.0](/assets/research-papers/security_challenges_in_industry_4.pdf)
+- [MITM Attack Research Paper](/assets/research-papers/mitm-attack-research-paper.pdf)
 
-## Articles
+## Articles & Documents
 - [Detailed blog on OPC UA Protocol Cyber Threats](https://www.txone.com/blog/opc-ua-protocol-cyber-threats/)
 - [Docker networking explained](https://indumathimanivannan.medium.com/docker-network-modes-explained-bridge-host-and-overlay-comparisons-d691857f9d30)
 - [Rogue Certificate](https://www.thesslstore.com/blog/what-is-a-rogue-certificate/)
@@ -32,6 +30,9 @@
 - [Structure of OPC UA message](https://reference.opcfoundation.org/Core/Part6/v105/docs/7.1.2)
 - [Publisher Subscriber model for OPC UA](https://prosysopc.com/blog/opc-ua-pubsub-explained/)
 - [Stuxnet - Real life worm attack on Iran Nuclear Base by USA](https://www.trellix.com/en-in/security-awareness/ransomware/what-is-stuxnet/)
+- [OPC UA (OPC Day) Based Communication (PubSub & Server-Client)](/assets/research-papers/13_opc_day.pdf)
+- [DEFCON 2025 | S7 Communication Breaking](/assets/research-papers/DEF%20CON%2025%20-%20Cheng-Lei-The-Spear-to-Break-the-Security-Wall-of-S7CommPlus.pdf)
+- [Understanding Linux real-time with PREEMPT_RT training](/assets/research-papers/preempt-rt-slides.pdf)
 - 
 
 ## Data Visualisation and Logging Software
