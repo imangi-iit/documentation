@@ -26,6 +26,33 @@ These resources laid the foundation for the next steps in the project.
 - **Custom PLC Program with OpenPLC**: A custom PLC program was developed using OpenPLC Editor. The program contained three variables, one of which was mutable (input), and was then run in the server container.
     - The client container was able to read and modify the values in the server container, allowing further experimentation with scripts for interaction.
 
+### OPC UA Wrapper
+- Not natively supported by OpenPLC. The idea was to develop a wrapper around the modbus broadcast by the OpenPLC program.
+- The `modbus_to_opcua.py` python script is used to capture the Modbus messages and convert and then broadcast to `opc.tcp://localhost:4840`, so it is visible on the network bridge. 
+- This is done using two of the libraries: [`pymodbus`](https://github.com/pymodbus-dev/pymodbus) and [`opcua-asyncio`](https://github.com/FreeOpcUa/opcua-asyncio).
+- **To explore**: There exist a library which uses OPC-UA in the base itself instead of Modbus [link](https://github.com/andiburger/OpenPLC_v3_Opcua.git) -> Not sure if this is working though.
+- This shall be used majorly for the project going forward (having to simulate cyber attacks, etc.), hence more importance (in terms of time and features of the client, server and attacker) has been given to it. 
+- ! Make this work for an extended number of PLC codes (need to check the breakdown of the message). This _might_ add redundancy if the message does not support or give off the memory location initially itself. Other way would be to get access to the program at the client location and parse it for further use. 
+
+---
+- ! **Doubt**: Can the Modbus stuff be captured, even if the wrapper exists (maybe this can be prevented by not exposing the `502` port reserved for Modbus).
+- ! **Doubt**: Check why and where was `pymodbus` was used in this case?
+
+### Modbus Implementation
+- The OpenPLC program natively works on the Modbus-TCP communication protocol. 
+- It uses the `502` port (need to expose this while running the Docker container). 
+- Considered to be the simplest protocol with no inherent security. 
+
+### Siemens Wrapper
+- Uses the **Siemens S7** communication protocol.
+- Utilises the `102` port on the localhost (Remeber to expose this while running the Docker container).
+- Used the [python-snap7](https://github.com/gijzelaerr/python-snap7.git) library to get the client code running (this is a simple framework which acts as a wrapper for the snap7 PLC communication library based in `C`).
+- Natively supported by OpenPLC (enable in the settings on the webclient, if already not active).
+- Utilises the snap7 library at the base, even in the backend for the implementation. [Link to Documentation](/assets/documents/Siemens%20Protocol%20driver%20for%20OpenPLC.pdf)
+- Needed to create a custom client for recieving the broadcasts. This can not be modular as yet (does have a generalised support for each and every `st` file). For this, one can temporarily either manually update the function - `read_inputs_outputs()` according to each and every memory location. 
+- Other way is to develop a simple python script that reads the `st` file, and makes the custom `read_inputs_outputs()` code which can be used to update the main function.
+- 
+
 ## 4. Progressing to Additional Protocols
 
 After successfully implementing OPC UA, the next step was to extend the system to support other protocols:
