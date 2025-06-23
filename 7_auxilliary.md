@@ -31,7 +31,7 @@
 - [Publisher Subscriber model for OPC UA](https://prosysopc.com/blog/opc-ua-pubsub-explained/)
 - [Stuxnet - Real life worm attack on Iran Nuclear Base by USA](https://www.trellix.com/en-in/security-awareness/ransomware/what-is-stuxnet/)
 - [OPC UA (OPC Day) Based Communication (PubSub & Server-Client)](/assets/research-papers/13_opc_day.pdf)
-- [DEFCON 2025 | S7 Communication Breaking](/assets/research-papers/DEFCON-2025.pdf)
+- [DEFCON 2025 - S7 Communication Breaking](/assets/research-papers/DEFCON-2025.pdf)
 - [Understanding Linux real-time with PREEMPT_RT training](/assets/research-papers/preempt-rt-slides.pdf)
 - 
 
