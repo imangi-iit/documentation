@@ -48,7 +48,7 @@ These resources laid the foundation for the next steps in the project.
 - Utilises the `102` port on the localhost (Remeber to expose this while running the Docker container).
 - Used the [python-snap7](https://github.com/gijzelaerr/python-snap7.git) library to get the client code running (this is a simple framework which acts as a wrapper for the snap7 PLC communication library based in `C`).
 - Natively supported by OpenPLC (enable in the settings on the webclient, if already not active).
-- Utilises the snap7 library at the base, even in the backend for the implementation. [Link to Documentation](/assets/documents/Siemens%20Protocol%20driver%20for%20OpenPLC.pdf)
+- Utilises the snap7 library at the base, even in the backend for the implementation. [Link to Documentation](/assets/documents/Siemens_Protocol_driver_for_OpenPLC.pdf)
 - Needed to create a custom client for recieving the broadcasts. This can not be modular as yet (does have a generalised support for each and every `st` file). For this, one can temporarily either manually update the function - `read_inputs_outputs()` according to each and every memory location. 
 - Other way is to develop a simple python script that reads the `st` file, and makes the custom `read_inputs_outputs()` code which can be used to update the main function.
 - 

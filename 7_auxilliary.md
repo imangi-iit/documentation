@@ -11,7 +11,7 @@
 ## Research Papers
 - [OPC UA Security](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=5514836)
 - [PLC Network Security](https://doi.org/10.1016/j.ijcip.2018.05.004)
-- [OpenPLC for Cyber Attack (Case Studies) on Smart Substation Systems](/assets/research-papers/Compatible_OpenPLC_%20for_Cyber_Attack_Case_Studies_on_Smart_Substation_Systems.pdf)
+- [OpenPLC for Cyber Attack (Case Studies) on Smart Substation Systems](/assets/research-papers/Compatible_OpenPLC.pdf)
 - [Digital Twin Based Cyber Attack Detection Framework for Cyber Physical Manufacturing Systems](/assets/research-papers/Digital_Twin-Based_Cyber-Attack_Detection_Framework_for_Cyber-Physical_Manufacturing_Systems.pdf)
 - [Evaluation of OPC UA Secure Communication in Web Browser Applications](/assets/research-papers/Evaluation_of_OPC_UA_secure_communication_in_web_browser_applications.pdf)
 - [Investigating the Security of OpenPLC Vulnerabilities Attacks and Mitigation Solutions](/assets/research-papers/Investigating_the_Security_of_OpenPLC_Vulnerabilities_Attacks_and_Mitigation_Solutions.pdf)
@@ -31,7 +31,7 @@
 - [Publisher Subscriber model for OPC UA](https://prosysopc.com/blog/opc-ua-pubsub-explained/)
 - [Stuxnet - Real life worm attack on Iran Nuclear Base by USA](https://www.trellix.com/en-in/security-awareness/ransomware/what-is-stuxnet/)
 - [OPC UA (OPC Day) Based Communication (PubSub & Server-Client)](/assets/research-papers/13_opc_day.pdf)
-- [DEFCON 2025 | S7 Communication Breaking](/assets/research-papers/DEF%20CON%2025%20-%20Cheng-Lei-The-Spear-to-Break-the-Security-Wall-of-S7CommPlus.pdf)
+- [DEFCON 2025 | S7 Communication Breaking](/assets/research-papers/DEFCON-2025.pdf)
 - [Understanding Linux real-time with PREEMPT_RT training](/assets/research-papers/preempt-rt-slides.pdf)
 - 
 
