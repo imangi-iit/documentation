@@ -12,3 +12,11 @@
 - **Advanced Attack Scenarios**: Simulating more complex attacks, such as ransomware or denial of service (DoS) attacks.
 - **Scalability**: Expanding the emulation to simulate larger industrial networks with more devices.
 - **Optimization**: Improving system performance by optimizing container configurations and network settings.
+
+## Types of Cyberattacks that can be performed
+
+### 1. 
+
+### 2. 
+
+### 3. 
