@@ -11,10 +11,11 @@ The architecture for the FSM Cybersecurity project is designed to emulate real-w
 - **Cyberattack Simulation**: A set of tools and scripts to simulate attacks like MITM and dictionary attacks on the emulated PLC systems.
 
 ### Communication Flow:
+
 1. **PLC Runtime**: Emulated PLC code executes control logic in Docker containers. (In simple terms, it is a compiler for the PLC program)
 2. **Network Layer**: Uses Docker’s bridge network for secure communication between containers. (emulates a switch and how the OT components are on the same network)
 3. **Attack Simulation**: Cyberattacks are launched via a dedicated attack container, interacting with PLC systems to test vulnerabilities.
-4. **Sniffing Containers**: These containers would not be detected by the Docker logger if they are programmed accordingly (advanced application). But, they _are_ visible at the low end (like in the Address Resolution Protocol (ARP) Table, etc). 
+4. **Sniffing Containers**: These containers would not be detected by the Docker logger if they are programmed accordingly (advanced application). But, they _are_ visible at the low end (like in the Address Resolution Protocol (ARP) Table, etc).
 
 ### Communication Protocols
 
@@ -37,4 +38,9 @@ The architecture for the FSM Cybersecurity project is designed to emulate real-w
 - **Log Analysis**: Logs all activities for analysis after an attack is simulated to understand the impact.
 
 ### Docker Network Topology:
+
 The containers communicate via Docker bridge networks, allowing for secure inter-container communication and exposure of ports to simulate real-world industrial communication. The server and client (official containers and parts of the network) lie on the network. An attacker has been added (for initial and naive implementation). An attacker can be programmed to sniff the network without it being an official part of the Docker bridge.
+
+### Presentation Link
+
+Check out the following presentation to get a brief, holistic idea about the project. [Link](https://drive.google.com/file/d/1rhEc1GYZic-qcUvPH_W2J9dXcxn2OWyw/view?usp=sharing).
